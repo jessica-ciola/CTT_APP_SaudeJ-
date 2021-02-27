@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -44,13 +45,20 @@ class MainActivity : AppCompatActivity() {
 
                     val medicamento = intent.extras?.get("MEDICAMENTO") as Medicamento
 
-                  val listaMedicamentos = mutableListOf<Medicamento>(medicamento)
+                  val listaMedicamentos = mutableListOf<Medicamento>()
+
+
 
             val rvCadastro = findViewById<RecyclerView>(R.id.listaDeMedicamentos)
 
             rvCadastro.adapter = CadastroAdapter(listaMedicamentos)
 
             rvCadastro.layoutManager = LinearLayoutManager(this)
+
+
+            listaMedicamentos.add(medicamento)
+            rvCadastro.adapter.notifyDataSetChanged()
+
 
 
 

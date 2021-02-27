@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ctt.saude_ja.model.Medicamento
 
-class CadastroAdapter(private val listaDeMedicamentos:MutableList<Medicamento>) :  RecyclerView.Adapter<CadastroAdapter.MedicamentoHolder>() {
+class CadastroAdapter(private var listaDeMedicamentos:MutableList<Medicamento>) :  RecyclerView.Adapter<CadastroAdapter.MedicamentoHolder>() {
 
     class MedicamentoHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nomeMedicamento: TextView = view.findViewById(R.id.txtNomeMedicamento)
