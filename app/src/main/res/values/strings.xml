@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Saúde Já</string>
+    <string name="cadastro">Cadastro do Medicamento</string>
+    <string name="nome_medi">Nome: </string>
+    <string name="freq_medi">Frequência: </string>
+    <string name="horario_medi">Horario: </string>
+    <string name="descricao_medi">Descrição: </string>
+    <string name="descricao_app">Controle sua Medicação</string>
+    <string name="botao_cadastrar">Cadastrar</string>
+</resources>

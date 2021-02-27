@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background= "@color/colorRosinha"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+            android:id="@+id/imgContato"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/ic_medicine"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:id="@+id/txtNomeMedicamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            tools:text="Diazepam"
+            app:layout_constraintStart_toEndOf="@+id/imgContato"
+            app:layout_constraintTop_toTopOf="@+id/imgContato"/>
+
+    <TextView
+            android:id="@+id/txtInfoMedicamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            tools:text="Sublingual"
+            app:layout_constraintTop_toBottomOf="@+id/txtNomeMedicamento"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.241" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:id="@+id/txtFrequencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:layout_marginEnd="12dp"
+            android:text="1 vez ao dia"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"/>
+    <TextView
+            android:id="@+id/txtHorario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:text="20:00"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:layout_marginEnd="32dp" app:layout_constraintTop_toBottomOf="@+id/txtFrequencia"
+            android:layout_marginTop="8dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

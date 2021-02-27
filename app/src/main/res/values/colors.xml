@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E35757</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorRosinha">#EABEBE</color>
+    <color name="rosaEscuro">#E35757</color>
+    <color name="rosaEscuro2">#B33D3D</color>
+    <color name="rosaEscuro3">#F12929</color>
+</resources>
